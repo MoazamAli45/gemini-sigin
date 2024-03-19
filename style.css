@@ -194,6 +194,15 @@ li {
   font-size: 9px;
   font-weight: 400;
 }
+.capcha-img-absolute {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 10px;
+  right: 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transform: translateY(-50%);
+}
 
 @media (max-width: 600px) {
   .hero,
