@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #010304;
+}
+
+a {
+  text-decoration: none;
+  color: #010304;
+  cursor: pointer;
+}
+
+.container {
+  padding-inline: 32px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 16px;
+  align-items: center;
+}
+
+.logo {
+  width: 25px;
+  height: 25px;
+}
+li {
+  list-style: none;
+}
+.nav {
+  display: flex;
+  gap: 20px;
+}
+.nav span {
+  color: #676868;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.nav a {
+  font-size: 12px;
+  font-weight: 600;
+  color: #010304;
+  background-color: #ebebeb;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+.nav a:hover {
+  background: rgba(1, 3, 4, 0.12);
+}
+
+.hero {
+  max-width: 430px;
+  margin-inline: auto;
+  margin-block: 20px;
+}
+.hero h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input {
+  padding: 15px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 10px;
+  border: 1.5px solid #cccdcd;
+  transition: all 0.3 ease;
+}
+.password-input {
+  width: 100%;
+  position: relative;
+}
+.password-input img {
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.password-input input {
+  width: 100%;
+}
+
+.input:focus {
+  border: 1.5px solid #010304;
+}
+
+.small-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.small-text a {
+  color: #005cf0;
+  text-decoration: underline;
+}
+.check-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-block: 10px;
+}
+
+.check-group input {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #010304;
+  accent-color: #010304;
+}
+
+.capcha-group {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #cccdcd;
+  padding: 10px;
+  width: 300px;
+  margin-block: 10px;
+}
+.capcha-group img {
+  width: 60px;
+  height: 60px;
+}
+.capcha-check {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.capcha-check label {
+  font-weight: 500;
+}
+.capcha-check input {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #010304;
+  accent-color: #010304;
+}
+.submit-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 20px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  background-color: #e6e6e6;
+  color: #b3b3b4;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit-group a {
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.bottom-group {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.bottom-group p {
+  text-align: center;
+  color: #676868;
+  font-size: 9px;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .hero,
+  .container {
+    max-width: 100%;
+    padding-inline: 16px;
+  }
+  .nav span {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .submit-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .submit-group button {
+    width: 100%;
+  }
+}

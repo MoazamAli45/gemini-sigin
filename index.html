@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini - Sign In</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="/">
+          <img src="logo.svg" alt="Gemini" class="logo" />
+        </a>
+        <div class="nav">
+          <li><span>Don’t have a Gemini account?</span></li>
+          <li><a href="/">Create a new account</a></li>
+        </div>
+      </div>
+    </nav>
+    <!--  FORM SECTION  -->
+    <section class="hero">
+      <div class="form-container">
+        <h2>Sign in</h2>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="email-input input" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-input">
+            <input type="password" id="password" class="input" />
+            <img src="eye.svg" alt="Eye" />
+          </div>
+        </div>
+        <span class="small-text"
+          >By clicking "Sign in" below, I agree to Gemini’s
+          <a href="/"> User Agreement </a> and
+          <a href="/">Privacy Policy</a>.</span
+        >
+        <div class="check-group">
+          <input type="checkbox" id="remember-password" />
+          <label for="remember-password">Remember my email address</label>
+        </div>
+        <div class="capcha-group">
+          <div class="capcha-check">
+            <input type="checkbox" id="not-robot" />
+            <label for="not-robot">I’m not a robot</label>
+          </div>
+          <img src="capcha.png" alt="Capcha" />
+        </div>
+        <div class="submit-group">
+          <button class="btn">Sign in</button>
+          <a href="/">Forgot your password?</a>
+        </div>
+      </div>
+      <div class="bottom-group">
+        <p>Trust is Our Product™</p>
+        <p>For trademarks and patents, please see our Legal Notice.</p>
+        <p>NMLS #1518126</p>
+        <p>© Copyright 2024 Gemini Trust Company, LLC.</p>
+      </div>
+    </section>
+  </body>
+</html>
